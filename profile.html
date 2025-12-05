@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart - User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+      <h1 class="logo">ElectroMart</h1>
+      <nav class="main-nav">
+          <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </button>
+          <ul id="main-menu" class="nav-list">
+              <li><a href="/index.html" class="nav-link">Home</a></li>
+              <li><a href="/cart.html" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                  </svg></a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main class="profile-container">
+    <h2 class="section-title">🧑 User Profile</h2>
+
+    <div class="profile-box">
+      <div class="profile-info">
+        <img src="images/Profile Avatar.jpeg" alt="User Avatar" class="profile-avatar">
+        <h3>Soumen Pore</h3>
+        <p>Email : soumen@techie404.mail</p>
+        <p>Member Since: Dec 2025</p>
+      </div>
+
+      <div class="profile-actions">
+        <h4>Account Settings</h4>
+        <a href="#" class="profile-link">Edit Personal Information</a>
+        <a href="#" class="profile-link">Change Password</a>
+        <a href="#" class="profile-link">View Order History</a>
+        <a href="#" class="profile-link">Manage Addresses</a>
+        <button class="btn logout-btn">Logout</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+      <p>© 2025 ElectroMart. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  
+</body>
+</html>

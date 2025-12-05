@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart - Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+      <h1 class="logo">ElectroMart</h1>
+      <nav class="main-nav">
+          <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </button>
+          <ul id="main-menu" class="nav-list">
+              <li><a href="/index.html" class="nav-link">Home</a></li>
+              <li><a href="/profile.html" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg></a></li>
+          </ul>
+      </nav>
+  </header>
+  
+  <main class="cart-container">
+    <h2 class="section-title">🛍️ Your Shopping Cart</h2>
+
+    <div id="cart-items">
+      <div class="cart-item">
+        <img src="images/Iphone.jpg" alt="Iphone 17 Air" class="cart-item-img">
+        <div class="item-details">
+          <h3>Iphone 17 Air</h3>
+          <p class="item-price">₹1,34,990</p>
+        </div>
+        <div class="item-quantity">
+          <label for="qty-iphone">Qty:</label>
+          <input type="number" id="qty-iphone" value="1" min="1" max="10">
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <div class="cart-item">
+        <img src="images/Headphone.webp" alt="Wireless Headphones" class="cart-item-img">
+        <div class="item-details">
+          <h3>Wireless Headphones</h3>
+          <p class="item-price">₹999</p>
+        </div>
+        <div class="item-quantity">
+          <label for="qty-headphones">Qty:</label>
+          <input type="number" id="qty-headphones" value="2" min="1" max="10">
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+      
+    </div>
+
+    <div class="cart-summary">
+      <h3>Cart Summary</h3>
+      <p>Subtotal: <span id="subtotal">₹1,36,988</span></p> 
+      <p>Shipping: <span id="shipping">₹100</span></p> 
+      <p class="cart-total">Total: <span id="total-amount">₹1,37,088</span></p>
+      <button class="btn checkout-btn">Proceed to Checkout</button>
+    </div>
+
+  </main>
+
+  <footer>
+      <p>© 2025 ElectroMart. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

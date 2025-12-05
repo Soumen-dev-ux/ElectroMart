@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart - Electronics Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    
+  
+    <header>
+        <h1 class="logo">ElectroMart</h1>
+        <nav class="main-nav">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="main-menu" class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                  
+                   <li id="auth-login"><a href="/login.html" class="nav-link">Sign Up / Login</a></li>
+                   <li id="auth-profile" style="display:none"><a href="/profile.html" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg></a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="/cart.html" class="nav-link cart-icon-link" aria-label="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                  </svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="hero" class="hero">
+        <h2>Powering Your Digital Lifestyle</h2>
+        <p>Top-quality gadgets at unbeatable prices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+   
+    <section id="products" class="products">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Search products by name or price...">
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card" data-name="Samsung S25 Ultra" data-price="129999">
+                <img src="images/Samsung Phone.jpg" alt="Phone">
+                <h3>Samsung S25 Ultra</h3>
+                <p class="price">₹1,29,999</p>
+                <a href="/cart.html" class="btn">Add to Cart</a>
+                <a href="/cart.html" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-name="Iphone 17 Air" data-price="134990">
+                <img src="images/Iphone.jpg" alt="Phone">
+                <h3>Iphone 17 Air</h3>
+                <p class="price">₹1,34,990</p>
+                <a href="/cart.html" class="btn">Add to Cart</a>
+                <a href="/cart.html" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-name="Wireless Headphones" data-price="999">
+                <img src="images/Headphone.webp" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p class="price">₹999</p>
+                <a href="/cart.html" class="btn">Add to Cart</a>
+                <a href="/cart.html" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-name="Bluetooth Speaker" data-price="2399">
+                <img src="images/Speaker.jpg" alt="Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p class="price">₹2,399</p>
+                <a href="/cart.html" class="btn">Add to Cart</a>
+                <a href="/cart.html" class="buy-btn">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-name="Smartwatch" data-price="1699">
+            <img src="images/Watch.webp" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <p class="price">₹1,699</p>
+            <a href="/cart.html" class="btn">Add to Cart</a>
+            <a href="/cart.html" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="product-card" data-name="Samsung Tablet" data-price="35990">
+            <img src="images/samsung Tablet.webp" alt="Tablet">
+            <h3>Samsung Tablet</h3>
+            <p class="price">₹35,990</p>
+            <a href="/cart.html" class="btn">Add to Cart</a>
+            <a href="/cart.html" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="product-card" data-name="Mechanical Keyboard" data-price="1199">
+            <img src="images/KeyBoard.webp" alt="Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p class="price">₹1,199</p>
+            <a href="/cart.html" class="btn">Add to Cart</a>
+            <a href="/cart.html" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="product-card" data-name="Wireless Mouse" data-price="599">
+            <img src="images/Mouse.webp" alt="Mouse">
+            <h3>Wireless Mouse</h3>
+            <p class="price">₹599</p>
+            <a href="/cart.html" class="btn">Add to Cart</a>
+            <a href="/cart.html" class="buy-btn">Buy Now</a>
+        </div>
+
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>© 2025 ElectroMart. All rights reserved.</p>
+        <div>
+            <a href="/cart.html">Privacy Policy</a> 
+            <a href="/cart.html">Terms</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
