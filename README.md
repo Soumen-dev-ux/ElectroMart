@@ -45,7 +45,7 @@ Price, image, titles
 (Upcoming) Fully designed cart page
 
 📂 Project Structure
-ElectroMaart/
+ElectroMart/
 │── index.html
 │── about.html
 │── contact.html
